@@ -339,10 +339,14 @@ a{
       flex-direction: column;
     }
     .video{
+      margin-top: 30px;
       height: 300px;
+      width: 100vw;
     }
     .videoWatch-content{
-      width: 100%;
+      width: 90%;
+      margin: 0 5%;
+      word-wrap: break-word;
     }
     .serachresultbox{
       width: 40%;
