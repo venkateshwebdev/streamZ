@@ -7,7 +7,7 @@ const MobileFooter = () => {
         <div className="footer-container">
                 <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:"10px",fontSize:"20px",width:"100%"}}><AiOutlineFire/></div>
                 <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:"10px",fontSize:"16px",width:"100%"}}><BsCameraReels /></div>
-                <Link to="/"><div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:"10px",fontSize:"20px",width:"100%"}}><AiOutlineHome/></div></Link>
+                <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:"10px",fontSize:"20px",width:"100%"}}><Link to="/"><AiOutlineHome/></Link></div>
                 <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:"10px",fontSize:"16px",width:"100%"}}><BsBookmark/></div>
                 <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:"10px",fontSize:"20px",width:"100%"}}><MdPlaylistAddCheck/></div>
         </div>
