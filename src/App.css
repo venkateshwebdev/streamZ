@@ -222,6 +222,14 @@ a{
 .hideSidebar{
   display: none;
 }
+.sidebar-sub{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 20px;
+  border-bottom: 2px solid #4e535c50;
+  padding-bottom: 20px;
+}
 .noPadVideoContainer{
   margin-left: 3%;
 }
@@ -290,7 +298,7 @@ a{
     grid-template-columns: repeat(1,1fr) ;
   }
   .hamLogo{
-    display: block
+    display:block
   };
 
 }

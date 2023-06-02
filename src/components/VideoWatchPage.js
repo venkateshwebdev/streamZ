@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { API_KEY } from "../helper";
 import VideoWatchShimmer from "./VideoWatchShimmer";
@@ -6,6 +6,8 @@ import {BsBookmark,BsBookmarkFill} from "react-icons/bs"
 import {MdFileDownloadDone} from "react-icons/md"
 import {HiDownload} from "react-icons/hi"
 import {AiFillHeart,AiOutlineHeart} from "react-icons/ai"
+import { SidebarContext } from "../Contexts/SidebarContext";
+import Sidebar from "./Sidebar";
 const VideoWatchPage = () => {
     const [videoDetails,setVideoDetails] = useState()
     const [channelDetails,setChannelDetails] = useState()
@@ -14,8 +16,10 @@ const VideoWatchPage = () => {
     const [download,setDownload] = useState(false)
     const [love,setLove] = useState(false)
     const id = useParams().id
+    const cxt = useContext(SidebarContext)
     // console.log(id)
     useEffect(()=>{
+        // cxt.changeSidebar(cxt.sidebar)
         getData()
     },[])
     const getData = async()=>{
