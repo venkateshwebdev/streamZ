@@ -18,10 +18,10 @@ const Search = () => {
     // }
     return (
         <div className="search-container">
-            <input type="text" placeholder="Search..." onChange={(e)=>setSearchEl(e.target.value)}/>
-            {/* <div style={{position:"relative",color:"white",backgroundColor:'red',padding:"0% 2%"}}>{searchResults?.map((e)=><p>{e}</p>)}</div> */}
-            {searchEl===""|searchEl===" "?<button><AiOutlineSend/></button>:
-            <Link to={`/search/${searchEl}`}><button><AiOutlineSend/></button></Link>}
+            <input type="text" placeholder="Search..." onChange={(e)=>setSearchEl(e.target.value)} value={searchEl}/>
+            <div className={`serachresultbox ${searchEl==""&&"hideSearch"}`}>{searchResults?.map((e)=><Link to={`search/${e}`}><p onClick={()=>setSearchEl("")} className="search-ele">{e}</p></Link>)}</div>
+            {searchEl===""|searchEl===" "?<button onClick={()=>setSearchEl("")}><AiOutlineSend/></button>:
+            <Link to={`/search/${searchEl}`}><button onClick={()=>setSearchEl("")}><AiOutlineSend/></button></Link>}
         </div>
     );
 }

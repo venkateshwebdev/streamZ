@@ -4,6 +4,7 @@ import VideoContainer from "./VideoContainer";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import MobileFooter from "./MobileFooter";
 
 const Body = () => {
     return (
@@ -13,6 +14,7 @@ const Body = () => {
             <Sidebar />
             <Outlet />
             </div>
+            <MobileFooter/>
             
         </div>
     );
