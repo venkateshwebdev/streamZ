@@ -36,7 +36,7 @@ const VideoWatchPage = () => {
     }
     return !videoDetails?<VideoWatchShimmer />:(<div className="videowatch-container">
         <div className="video">
-        <iframe width="100%" height={"100%"} src={`https://www.youtube.com/embed/${id}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height={"100%"} src={`https://www.youtube.com/embed/${id}`} title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;fullscreen"></iframe>
         </div>
         <div className="videoWatch-content">
         <h2>{videoDetails?.snippet?.title}</h2>
