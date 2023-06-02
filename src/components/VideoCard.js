@@ -6,7 +6,7 @@ const VideoCard = (props) => {
         <div className="videocard-content">
             <h5>{props.data?.snippet?.title.slice(0,70)}</h5>
             <h5 style={{color:"lightgray"}}>| {props.data?.snippet?.channelTitle} |</h5>
-            <p style={{fontSize:'12px',color:"gray"}}>{props.data?.statistics.viewCount>1000000?(props.data?.statistics?.viewCount/1000000).toFixed(2) + " M views":(props.data?.statistics?.viewCount/1000).toFixed(0) + " K views"}</p>
+            <p style={{fontSize:'12px',color:"gray"}}>{props.data?.statistics?.viewCount>1000000?(props.data?.statistics?.viewCount/1000000).toFixed(2) + " M views":(props.data?.statistics?.viewCount/1000).toFixed(0) + " K views"}</p>
         </div>
     </div></Link> );
 }
