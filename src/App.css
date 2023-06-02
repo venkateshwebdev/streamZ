@@ -276,7 +276,7 @@ a{
   width: 90%;
   background-color:#2d313ad7 ;
   /* background-color: red; */
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   position: fixed;
   bottom:0;
   z-index: 1000000;
