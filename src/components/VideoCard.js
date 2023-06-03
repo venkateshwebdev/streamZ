@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const VideoCard = (props) => {
 {/* <Link to={`/watch/${props.data?.id}`}></Link> */}
-    return (<Link to={`/watch/${props.data?.id.videoId?props.data?.id.videoId:props.data?.id}`}><div className="video-card-container">
+    return props.data?.id?.playlistId||props.data?.id?.channelId?console.log("removed"):(<Link to={`/watch/${props.data?.id.videoId?props.data?.id.videoId:props.data?.id}`}><div className="video-card-container">
         <img src={props.data?.snippet?.thumbnails?.maxres?props.data?.snippet?.thumbnails?.maxres?.url:props.data?.snippet?.thumbnails?.medium?.url}/>
         <div className="videocard-content">
             <h5>{props.data?.snippet?.title.slice(0,70)}</h5>
