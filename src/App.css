@@ -354,7 +354,7 @@ a{
 
   /* .video-card-container{
     height: 300px;} */
-    .search-container > input{
+    .search-container >form> input{
       width: 60px;
     }
     .videowatch-container{
