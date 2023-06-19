@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { SidebarContext } from "../Contexts/SidebarContext";
 const Sidebar = () => {
     const {sidebar,changeSidebar} = useContext(SidebarContext)
-    console.log(sidebar,changeSidebar)
+    // console.log(sidebar,changeSidebar)
     return ( <div className={`sidebar-container ${sidebar&&"hideSidebar"}`} >
         <div className="sidebar-sub">
         <Link><div className="sidebar-Links"><span><AiOutlineHome fontSize={"18px"}/></span><span>Home</span></div></Link>

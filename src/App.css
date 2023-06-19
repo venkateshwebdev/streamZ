@@ -177,17 +177,18 @@ a{
   background-color:#44495624;
   border-top-left-radius:15px;
   border-top-right-radius:15px;
+  animation: shimmerCycle 1.5s ease infinite;
 }
 .t{
   border-radius: 10px;
   margin-left: 2%;
 }
-.search-container{
+.search-container > form{
   display: flex;
   align-items: center;
   gap:20px
 }
-.search-container > input{
+.search-container > form > input{
   background-color: transparent;
   border: none;
   outline: none;
@@ -195,7 +196,7 @@ a{
   color: #eeeeee;
   padding: 5px 10px;
 }
-.search-container > button{
+.search-container > form > button{
   border: none;
   outline: none;
   background-color: transparent;
@@ -316,6 +317,27 @@ a{
   90%{left: -1%;}
   100%{left: 0%;}
   
+}
+@keyframes shimmerCycle {
+  0%{background-color:#7c808c55;}
+  5%{background-color:#7c808c55;}
+  10%{background-color:#7c808c50;}
+  15%{background-color:#7c808c50;}
+  20%{background-color:#7c808c45;}
+  25%{background-color:#7c808c45;}
+  30%{background-color:#7c808c40;}
+  35%{background-color:#7c808c40;}
+  40%{background-color:#7c808c35;}
+  45%{background-color:#7c808c35;}
+  50%{background-color:#7c808c30;}
+  55%{background-color:#7c808c30;}
+  60%{background-color:#7c808c29;}
+  65%{background-color:#7c808c29;}
+  70%{background-color:#7c808c28;}
+  75%{background-color:#7c808c28;}
+  80%{background-color:#7c808c27;}
+  90%{background-color:#7c808c27;}
+  100%{background-color:#7c808c27;}
 }
 
 @media screen and (max-width:800px) {
